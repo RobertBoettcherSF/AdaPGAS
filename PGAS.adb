@@ -1,25 +1,25 @@
 --  File: PGAS.adb
---  Description: Implementation of My_Package subprograms and package body.
---  This file provides the actual code for procedures and functions declared in my_package.ads.
+--  Description: Implementation of PGAS subprograms and package body.
+--  This file provides the actual code for procedures and functions declared in PGAS.ads.
 
-package body My_Package is
+package body PGAS is
 
-   --  Implementation of My_Procedure
-   procedure My_Procedure (Param : in out My_Type) is
+   --  Implementation of PGAS_Procedure
+   procedure PGAS_Procedure (Param : in out PGAS_Type) is
    begin
       --  Example operation on Param
       Param.Field1 := Param.Field1 + 1;
-   end My_Procedure;
+   end PGAS_Procedure;
 
-   --  Implementation of My_Function
-   function My_Function (Param : My_Type) return Integer is
+   --  Implementation of PGAS_Function
+   function PGAS_Function (Param : PGAS_Type) return Integer is
    begin
       return Param.Field1 * 2;
-   end My_Function;
+   end PGAS_Function;
 
    --  Optional: Package initialization code
    --  begin
    --     -- Initialization statements if needed
    --  end;
 
-end My_Package;
+end PGAS;

@@ -1,17 +1,17 @@
---  File: my_project.gpr
---  Description: GNAT Project file for My_Project.
+--  File: PGAS.gpr
+--  Description: GNAT Project file for PGAS.
 --  This file configures the project, including source directories and compilation options.
 
-project My_Project is
+project PGAS is
 
    --  Define source directories
-   for Source_Dirs use ("src");
+   for Source_Dirs use (".");
 
    --  Define object directory
    for Object_Dir use "obj";
 
    --  Define main program (if applicable)
-   for Main use ("main.adb");
+   for Main use ("PGAS.adb");
 
    --  Define compiler options
    package Compiler is
@@ -21,4 +21,4 @@ project My_Project is
    --  Define dependencies (if any)
    --  for Import_Dirs use ("../other_project/src");
 
-end My_Project;
+end PGAS;
