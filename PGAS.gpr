@@ -10,6 +10,9 @@ project PGAS is
    --  Define object directory
    for Object_Dir use "obj";
 
+   --  Define source files
+   for Source_Files use ("PGAS.ads", "PGAS.adb");
+
    --  Define compiler options
    package Compiler is
       for Default_Switches ("Ada") use ("-O2", "-gnatwa");
